@@ -1,0 +1,29 @@
+<div class="container">
+    <header>
+        <h1>Sign up</h1>
+        <p>Please fill in the form below to create an account</p>
+    </header>
+    <form id="form" >
+        <div class="form-component">
+            <input type="text" name="full_name" id="fullname" placeholder="Full name">
+            <div class="error" id="nameErr"></div>
+        </div>
+        <div class="form-component">
+            <input type="text" name="email" id="email" placeholder="Email">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="form-component">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <div class="error" id="passwordErr"></div>
+        </div>
+        <div class="form-component">
+            <input type="password" id="confirmPassword" placeholder="Confirm password">
+            <div class="error" id="confirmPasswordErr"></div>
+        </div>
+        <button>Sign up</button>
+    </form>
+
+    <div class="error" id="signUpErr">{{error}}</div>
+    <div class="success" id="signUpSuc">{{success}}</div>
+    <p>Do you already have an account? <a href="/">Log in</a></p>
+</div>

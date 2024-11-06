@@ -1,0 +1,20 @@
+<div class="container">
+    <header>
+        <h1>Login</h1>
+    </header>
+    <form id="form" action="/" method="post">
+        <div class="form-component">
+            <input type="text" name="email" placeholder="Email">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="form-component">
+            <input type="password" name="password" placeholder="Password">
+            <div class="error" id="passwordErr"></div>
+        </div>
+        <button>Login</button>
+        <div class="error" >{{error}}</div>
+        <div class="success">{{success}}</div>
+
+        <p>Don't you have an account? <a href="/signup">Sign up</a></p>
+    </form>
+</div>

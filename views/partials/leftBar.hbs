@@ -1,0 +1,21 @@
+<div id="left-bar">
+    <a href="/compose">
+        <div class="left-bar-component {{#if compose}}current{{/if}}" id="compose ">
+            <img src="/image/compose.png" alt="inbox" class="icon">
+            <p>Compose</p>
+        </div>
+    </a>
+    <a href="/inbox">
+        <div class="left-bar-component {{#if inbox}}current{{/if}}" id="inbox ">
+            <img src="/image/inbox.png" alt="inbox" class="icon">
+            <p>Inbox</p>
+        </div>
+    </a>
+    <a href="/outbox">
+        <div class="left-bar-component {{#if outbox}}current{{/if}}" id="outbox ">
+            <img src="/image/outbox.png" alt="outbox" class="icon">
+            <p>Outbox</p>
+        </div>
+    </a>
+
+</div>

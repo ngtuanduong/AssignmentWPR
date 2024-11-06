@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    {{#if cssPath}}
+        <link rel="stylesheet" href="{{cssPath}}">
+    {{/if}}
+</head>
+
+<body>
+    {{{body}}}
+    {{#if jsPath}}
+        <script src="{{jsPath}}"></script>
+    {{/if}}
+</body>
+
+</html>

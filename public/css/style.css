@@ -1,0 +1,279 @@
+:root {
+  --dark: #222831;
+  --black: #393E46;
+  --teal: #00ADB5;
+  --gray-white: #F6F8FC;
+  --gray: #EEEEEE;
+  --dark-gray: #C0C0C0;
+}
+input[type="checkbox"] {
+  accent-color: #00ADB5; /* Change this color as needed */
+}
+a{
+  text-decoration: none;
+  color: var(--black);
+}
+body{
+  color: var(--black);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--gray-white);
+}
+
+button{
+  border: none;
+  padding: 10px;
+  background-color: var(--gray);
+}
+button:hover{
+  cursor: pointer;
+  color: var(--gray);
+  background-color: var(--teal);
+}
+
+.success{
+  color: green;
+}
+.error{
+  color:red;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: var(--gray);
+}
+
+
+
+#header{
+  height: 5vh;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  font-size: 1.2em;
+  align-items: center;
+}
+.header-component{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#logo{
+  width: 30px;
+  height:30px;
+}
+#email{
+  font-size: 0.7em;
+}
+#signout-btn{
+  text-decoration: none;
+  color: var(--black);
+}
+
+
+#container{
+  height: 95vh;
+  display: flex;
+}
+#left-bar{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  padding: 10px;
+  padding-left: 0px;
+  gap: 5px;
+}
+
+.left-bar-component{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  padding: 0px 10px;
+}
+.left-bar-component:hover{
+  background-color: var(--teal);
+  color: white;
+  cursor: pointer;
+
+}
+
+#box{
+  width: 100%;
+  padding: 10px;
+}
+#toolbar{
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+#box-title{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  background-color: var(--teal);
+  color: var(--gray);
+  border: solid 1px var(--teal);
+}
+.box-item{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  border: solid 1px var(--gray-white);
+  background-color: white;
+}
+.box-item:hover{
+  border: solid 1px var(--black);
+  cursor: pointer;
+
+}
+.checkbox{
+  width: 10%;
+}
+.checkbox input{
+  width: 20px;
+  height: 20px;
+}
+.mail-name{
+  width: 20%;
+}
+.mail-subject{
+  width: 50%;
+}
+.mail-date{
+  width: 20%;
+  text-align: end;
+}
+
+#pagination{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+.page{
+  text-decoration: none;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: var(--dark-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page:hover{
+  background-color: var(--teal);
+  color: white;
+  cursor: pointer;
+}
+.current{
+  background-color: var(--teal);
+  color: white;
+}
+#current-page{
+  background-color: var(--teal);
+  color: white;
+}
+
+
+#compose{
+  background-color: white;
+  padding : 10px;
+  gap: 10px;
+  width: 800px;
+  height: 700px;
+  margin-left: 200px ;
+}
+
+.compose-header{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-bottom: solid 1px var(--black);
+  margin-bottom: 10px;
+  height: 60px;
+}
+.compose-label{
+  padding: 10px;
+  border: solid 2px var(--black);
+  width: 40px;
+  height: 20px;
+  text-align: center;
+}
+#compose-recipient{
+  height: 30px;
+}
+#compose-subject{
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px;
+  border-bottom: solid 1px var(--black);
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#compose-subject:focus {
+  outline: none;
+}
+#compose-body{
+  display: block;
+  width: 100%;
+  height: 440px;
+  resize: none;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#compose-body:focus{
+  outline: none;
+}
+#compose-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  border-top: solid 1px var(--black);
+}
+#attachmentInput{
+}
+#compose-send-button{
+  background-color: var(--teal);
+  color: var(--gray);
+}
+
+#detail{
+
+  background-color: white;
+  padding : 10px;
+  gap: 10px;
+  width: 800px;
+  height: 700px;
+  margin-left: 200px ;
+}
+#detail-subject{
+  font-size: 20px;
+  padding: 10px 5px;
+  border-bottom: solid 1px var(--black);
+}
+.detail-header{
+  display: flex;
+  height: 40px;
+  gap: 10px;
+}
+#detail-body{
+  height: 440px;
+  padding: 20px 0px;
+  border-top: solid 1px var(--black);
+}

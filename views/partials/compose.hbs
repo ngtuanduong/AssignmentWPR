@@ -1,0 +1,24 @@
+<div id="compose">
+    <div class="compose-header">
+        <div class="compose-label">From</div>
+        <p id="compose-sender">You</p>
+    </div>
+    <div class="compose-header">
+        <div class="compose-label">To</div>
+        <select name="recipient" id="compose-recipient">
+            <option selected disabled hidden>Choose here</option>
+        </select>
+        <div class="error" id="recipientErr"></div>
+    </div>
+    <input type="text" id="compose-subject" placeholder="Add a subject">
+    <textarea name="body" id="compose-body"></textarea>
+    <div id="compose-footer">
+        <form id="attachmentForm">
+            <input type="file"  id="attachmentInput" name="attachment">
+        </form>
+        <div class="error" id="error"></div>
+        <div class="success" id="success"></div>
+        <button id="compose-send-button">Send</button>
+    </div>
+
+</div>
