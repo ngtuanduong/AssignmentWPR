@@ -1,3 +1,5 @@
 node_modules/
 .env
-dbsetup.js
+dbsetup
+docker-compose.yml
+Dockerfile

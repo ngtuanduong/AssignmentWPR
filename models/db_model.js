@@ -1,7 +1,7 @@
 const mysql = require("mysql2/promise");
 const dbConfig = {
-    host: process.env.DB_HOST || "mysql.railway.internal", // Docker gọi tới service "mysql"
-    port: 3306,
+    host: process.env.DB_HOST || "trolley.proxy.rlwy.net", // Docker gọi tới service "mysql"
+    port: 41253,
     user: process.env.DB_USER || "root",
     password: process.env.DB_PASSWORD || "NlOSOOivEpBlaylZGLmhQPxYdJBaaAGW",
     database: process.env.DB_NAME || "railway",
