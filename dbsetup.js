@@ -1,19 +1,19 @@
-const mysql = require('mysql2/promise');
+const mysql = require("mysql2/promise");
 
 const dbConfig = {
-    host: '127.0.0.1',
+    host: "mysql",
     port: 3306,
-    user: 'wpr',
-    password: 'fit2024',
+    user: "wpr",
+    password: "fit2024",
 };
 
 async function setupDatabase() {
     try {
         const connection = await mysql.createConnection(dbConfig);
 
-        await connection.query('DROP DATABASE IF EXISTS wpr2201040036');
-        await connection.query('CREATE DATABASE  wpr2201040036');
-        await connection.query('USE wpr2201040036');
+        await connection.query("DROP DATABASE IF EXISTS wpr2201040036");
+        await connection.query("CREATE DATABASE  wpr2201040036");
+        await connection.query("USE wpr2201040036");
 
         await connection.query(`
         CREATE TABLE users (
@@ -23,7 +23,6 @@ async function setupDatabase() {
             password VARCHAR(255) NOT NULL
         );
         `);
-
 
         // Create the emails table
         await connection.query(`
@@ -90,11 +89,10 @@ async function setupDatabase() {
 
         `);
 
-
-        console.log('Database setup completed successfully.');
+        console.log("Database setup completed successfully.");
         await connection.end();
     } catch (error) {
-        console.error('Error setting up the database:', error);
+        console.error("Error setting up the database:", error);
     }
 }
 
